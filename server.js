@@ -5,6 +5,8 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+console.log("__filename:"+__filename)
+console.log("__dirname:"+__dirname)
 const app = express();
 
 // Serve static files from the build directory
