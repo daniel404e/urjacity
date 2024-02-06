@@ -14,7 +14,7 @@ export default function Home() {
 
 
     return (
-        <>
+        <div className='   '>
             {/* <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Events 1"> */}
             <div className="w-full">
                 {/*Start Events-style2 */}
@@ -45,7 +45,7 @@ export default function Home() {
                         
                         
                         
-                        <div className="grid lg:grid-cols-3 gap-4 sm:grid-cols-1  md:grid-cols-2  ">
+                        <div className="grid lg:grid-cols-4 gap-4 sm:grid-cols-2  md:grid-cols-3   mx-5 ">
                             {/*Start Events Style2 Single */}
                           
                          
@@ -82,7 +82,7 @@ export default function Home() {
                                         </ul>
                                         <div className="events-style2__single-btn">
                                             <div className="btn-one hover:cursor-pointer hover:scale-105"  >
-                                                <span className="txt">Read More</span>
+                                                <span className="txt">Know More</span>
                                             </div>
                                         </div>
                                     </div>
@@ -106,6 +106,6 @@ export default function Home() {
                 </div>
 
             {/* </Layout> */}
-        </>
+        </div>
     )
 }
