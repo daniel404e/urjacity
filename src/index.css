@@ -55,6 +55,16 @@
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
+/* In your global CSS file */
+.multi-line-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines you want */
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 :root {
   --thm-gray: #676767;
   --thm-gray-rgb: 103, 103, 103;
@@ -331,7 +341,7 @@ li {
   font-size: 18px;
   font-weight: 700;
   text-transform: none;
-  background: var(--thm-base);
+  
   overflow: hidden;
   font-family: var(--thm-font);
   transition: all 0.3s ease-in-out 0.1s;
@@ -3207,9 +3217,9 @@ Portfolio Style1
 }
 
 .events-style2__single-btn .btn-one {
-  color: var(--thm-black);
+  color: white;
   border: 1px solid #E5E5E5;
-  background: #ffffff;
+  
 }
 
 .events-style2__single:hover .events-style2__single-btn .btn-one {
