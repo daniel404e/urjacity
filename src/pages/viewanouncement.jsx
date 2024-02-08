@@ -46,7 +46,7 @@ export default function Home() {
                                 <div className="event-details__content">
                                     <div className="event-details__content-text1  px-2">
                                         <h2 className='font-bold ' >{announcementvar.title}</h2>
-                                        <p className="text1"> {announcementvar.textcontent}</p>
+                                        <p className="text1 mt-[25px]"> {announcementvar.textcontent}</p>
                                          
                                     </div>
                                    
