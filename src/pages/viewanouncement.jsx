@@ -6,7 +6,25 @@ import {  faCalendarDays , faClock ,  faLayerGroup  ,  faTags   ,  faLocationDot
  
 
 export default function Home() {
-     
+ 
+    
+
+
+    const announcementvar = {
+        imagesrc : dummyimgsrc , 
+        title: "The Youth Event Things To Remember" , 
+        textcontent:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        startdate:"May 10, 2023" , 
+        enddate:"May 13, 2023" , 
+        time:"10:00AM - 02:30PM",
+        category:"Sale",
+        location:"Bengaluru,marathali",
+        contact:"9945027502"
+
+
+    }
+
+
 
     
     return (
@@ -17,7 +35,7 @@ export default function Home() {
                     <div className="  bg-gray-100 rounded-xl mx-2 ">
                         <div className="flex justify-center "> {/* Replaces 'row' */}
                            
-                                        <img  className='w-auto h-[400px] rounded-2xl m-2 object-cover' src={dummyimgsrc} alt="#" />
+                                        <img  className='w-auto h-[400px] rounded-2xl m-2 object-cover' src={announcementvar.imagesrc} alt="#" />
                                      
                              
                         </div>
@@ -26,10 +44,10 @@ export default function Home() {
                         <div className="flex flex-wrap"> {/* Replaces 'row' */}
                             <div className="w-full lg:w-8/12 mb-10"> {/* Approximates 'col-xl-8 col-lg-7' */}
                                 <div className="event-details__content">
-                                    <div className="event-details__content-text1">
-                                        <h2 className='font-bold ' >Event Overview</h2>
-                                        <p className="text1">Lorem ipsum dolor sit amet </p>
-                                        <p className="text2">Fringilla mauris magna sit elementum elit. Facilisi lacus, pharetra.</p>
+                                    <div className="event-details__content-text1  px-2">
+                                        <h2 className='font-bold ' >{announcementvar.title}</h2>
+                                        <p className="text1"> {announcementvar.textcontent}</p>
+                                         
                                     </div>
                                    
                                     
@@ -42,6 +60,33 @@ export default function Home() {
                                                         <h2 className='font-bold' >Event details</h2>
                                                     </div>
                                                     <ul className="event-details__sidebar-single-list">
+                                                    <li>
+                                                            <div className="icon-box">
+                                                                
+                                                                <FontAwesomeIcon className='mx-1 text-red-500' icon={faPhone} />
+                                                                
+                                                            </div>
+        
+                                                            <div className="text-box">
+                                                                <h4>Contact:</h4>
+                                                                <p>{announcementvar.contact}</p>
+                                                            </div>
+                                                        </li>
+
+                                                    <li>
+                                                            <div className="icon-box">
+                                                                
+                                                                <FontAwesomeIcon className='mx-1 text-red-500' icon={faLocationDot} />
+                                                                
+                                                            </div>
+        
+                                                            <div className="text-box">
+                                                                <h4>Location:</h4>
+                                                                <p>{announcementvar.location}</p>
+                                                            </div>
+                                                        </li>
+                                                     
+
                                                         <li>
                                                             <div className="icon-box">
                                                                  
@@ -51,7 +96,7 @@ export default function Home() {
         
                                                             <div className="text-box">
                                                                 <h4>Start Date:</h4>
-                                                                <p>May 10, 2023: 10:00AM</p>
+                                                                <p>{announcementvar.startdate}</p>
                                                             </div>
                                                         </li>
         
@@ -62,7 +107,7 @@ export default function Home() {
         
                                                             <div className="text-box">
                                                                 <h4>End Date:</h4>
-                                                                <p>May 13, 2023: 02:30PM</p>
+                                                                <p>{announcementvar.enddate}</p>
                                                             </div>
                                                         </li>
         
@@ -75,9 +120,10 @@ export default function Home() {
         
                                                             <div className="text-box">
                                                                 <h4>Time:</h4>
-                                                                <p>10:00AM - 02:30PM</p>
+                                                                <p>{announcementvar.time}</p>
                                                             </div>
                                                         </li>
+                                                      
         
                                                         <li>
                                                             <div className="icon-box">
@@ -88,21 +134,11 @@ export default function Home() {
         
                                                             <div className="text-box">
                                                                 <h4>Category:</h4>
-                                                                <p><span>Sale</span></p>
+                                                                <p>{announcementvar.category}</p>
                                                             </div>
                                                         </li>
         
-                                                        <li>
-                                                            <div className="icon-box">
-                                                            
-                                                            <FontAwesomeIcon className='mx-1 text-red-500' icon={faTags} />
-                                                            </div>
-        
-                                                            <div className="text-box">
-                                                                <h4>Tags:</h4>
-                                                                <p><span>Covernment,</span> Meeting, City</p>
-                                                            </div>
-                                                        </li>
+                                                        
                                                     </ul>
                                                 </div>
         
@@ -115,7 +151,7 @@ export default function Home() {
         
                                                 <div className="event-details__sidebar-single contact-info">
                                                     <div className="title">
-                                                        <h2>Event Venue</h2>
+                                                        <h2>Vendor Details</h2>
                                                     </div>
                                                     <div className="text-box">
                                                         <p>Mauris magna sit elementum elit facilis lacusacphar.</p>
