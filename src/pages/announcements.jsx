@@ -22,11 +22,11 @@ export default function Home() {
                 {/*Start Events-style2 */}
                  
                     <div className="w-[100%]   ">
-                        <div className="sec-title text-center">
-                            <div className="sub-title">
-                                <h6>upcoming Events</h6>
+                        <div className="sec-title text-center ">
+                            <div className="sub-title mt-6">
+                                <h6>Bengaluru</h6>
                             </div>
-                            <h2>Explore Upcoming City <br />Event Schedule</h2>
+                            <h2>Explore and Act for sustainable living <br />around you</h2>
                         </div>
                          
                          <div className="flex justify-center my-4" >
