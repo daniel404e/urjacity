@@ -4,6 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import Announcements from "./pages/announcements.jsx"
 import Viewannouncement from "./pages/viewanouncement.jsx"
+import AnnouncementsAdminPage from "./pages/announcementsAdminPage.jsx"
+
 
 import {
   Navigate,
@@ -21,6 +23,13 @@ const router = createBrowserRouter([
   {
     path:"/viewannouncement/:announcementid",
     element: <Viewannouncement/>
+
+
+  } ,
+
+  {
+    path:"/announcementadminpage",
+    element: <AnnouncementsAdminPage/>
 
 
   }

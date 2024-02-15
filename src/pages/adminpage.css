@@ -1,0 +1,9 @@
+/* Example custom styles for inputs and buttons */
+.input {
+    @apply px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600;
+  }
+  
