@@ -8,6 +8,11 @@ import { faStore } from '@fortawesome/free-solid-svg-icons';
 // import dummyimgsrc from "./events-v1-img1.jpg"
 import dummyimgsrc from "./Yellp.jpg"
 
+
+// const server = "http://localhost:4100"
+const server = "http://134.209.155.253:4100"
+
+
 export default function Home() {
 
 
@@ -15,7 +20,7 @@ export default function Home() {
     const [anounsmentsstate, setanounsmentsstate] = useState([  ]);
 
   useEffect(() => {
-    fetch('http://localhost:4100/getallannouncements')
+    fetch(server+'/getallannouncements')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

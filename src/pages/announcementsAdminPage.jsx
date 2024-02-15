@@ -8,8 +8,8 @@ import "./adminpage.css"
 
  
 
-
-
+// const server = "http://localhost:4100"
+const server = "http://134.209.155.253:4100"
 
  
   
@@ -73,7 +73,7 @@ const Form = () => {
       e.preventDefault();
 
        
-      postData('http://localhost:4100/addnewannouncements', {... formData })
+      postData(server+'/addnewannouncements', {... formData })
         .then(data => {
           console.log(data); // JSON data parsed by `response.json()` call
           setResponseData(data);
@@ -108,7 +108,7 @@ const Form = () => {
         tempformdata.fromdate =    new Date(tempformdata.fromdate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })  
         tempformdata.todate   =   new Date(tempformdata.todate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })  
 
-        postData('http://localhost:4100/editannouncement', { announcementUniqueId: tempformdata.announcementUniqueId  , updateData: tempformdata })
+        postData(server+'/editannouncement', { announcementUniqueId: tempformdata.announcementUniqueId  , updateData: tempformdata })
         .then(data => {
           console.log(data); // JSON data parsed by `response.json()` call
           setResponseData(data);
@@ -142,7 +142,7 @@ const Form = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:4100/getallannouncements')
+        fetch(server+'/getallannouncements')
           .then(response => {
             if (!response.ok) {
               throw new Error('Network response was not ok');
