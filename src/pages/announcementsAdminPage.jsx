@@ -309,7 +309,7 @@ const Form = () => {
       >
         <option value="">Select CTA Category</option>
         <option value="Join In">Join In</option>
-        <option value="Buy">Buy</option>
+        <option value="Enquire">Enquire</option>
         <option value="Attend">Attend</option>
       </select>
         <input
@@ -516,7 +516,7 @@ const Form = () => {
       >
         <option value="">Select CTA Category</option>
         <option value="Join In">Join In</option>
-        <option value="Buy">Buy</option>
+        <option value="Enquire">Enquire</option>
         <option value="Attend">Attend</option>
       </select>
         <input

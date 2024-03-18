@@ -28,6 +28,7 @@ export default function Home() {
         return response.json();
       })
       .then(data => {
+        console.log(data)
         setanounsmentsstate(data);
       })
       .catch(error => {
@@ -46,7 +47,7 @@ export default function Home() {
                     <div className="w-[100%]   ">
                         <div className="sec-title text-center ">
                             <div className="sub-title mt-6">
-                                <h6>Bengaluru</h6>
+                                <h6>Delhi</h6>
                             </div>
                             <h2>Explore and Act for sustainable living <br />around you</h2>
                         </div>
@@ -93,28 +94,28 @@ export default function Home() {
                                         </div>
                                     </div>
 
-                                    <div className=" events-style2__single-content text-center  h-[400px] group">
+                                    <div className=" events-style2__single-content text-center  h-[450px] group">
                                     
-                                    <div className='  w-full h-[105px]    '> 
-  <h2 className="multi-line-truncate group-hover:text-white"> {element.title}   </h2>
+                                    <div className='  w-full h-[155px]     '> 
+  <h2 className="multi-line-truncate group-hover:text-white text-sm h-full"> {element.title}   </h2>
 </div>
 
                                         
                                       
 
   {/* New relative container for positioning the p element and the button */}
-  <div className="absolute inset-x-0 bottom-0 mx-auto flex flex-col items-center pb-5  ">
+  <div className="absolute inset-x-0 bottom-0 mx-auto flex flex-col items-center pb-5    ">
     {/* Absolute positioning for the p element */}
-    <div className="absolute bottom-full   -mb-3"> {/* Adjust bottom-full and mb-2 as needed */}
+    <div className="absolute bottom-full   -mb-4"> {/* Adjust bottom-full and mb-2 as needed */}
       <p className="flex items-center font-semibold group-hover:text-white"><FontAwesomeIcon className='mx-1' icon={faStore} /> {element.VendorName} </p>
     </div>
 
     {/* Existing button structure */}
-    <div className="events-style2__single-btn">
-      <div  className="btn-one hover:cursor-pointer hover:scale-105 bg-red-500 shadow-sm w-[130px]">
+    <a className="events-style2__single-btn" href={element.ctaLink} target="_blank" rel="noopener noreferrer">
+      <div  className="btn-one hover:cursor-pointer hover:scale-105 bg-red-500 shadow-sm w-[130px]" >
         <span className="txt">{element.ctaCategory}</span>
       </div>
-    </div>
+    </a>
   </div>
                                        
                                     </div>
